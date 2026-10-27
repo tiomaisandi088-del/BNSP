@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+</head>
+<body>
+
+    <header>
+        <h1>Task Manager</h1>
+        <p>Aplikasi sederhana untuk mengelola tugas harian.</p>
+    </header>
+
+    <nav aria-label="Navigasi utama">
+        <a href="#ringkasan">Ringkasan</a>
+        <a href="#daftar-tugas">Daftar Tugas</a>
+        <a href="#tambah-tugas">Tambah Tugas</a>
+    </nav>
+
+    <main>
+        <section id="ringkasan">
+            <h2>Ringkasan Tugas</h2>
+            <artocle>
+                <h3>Tugas 1</h3>
+                <p>Daftar tugas yang harus diselesaikan hari ini.</p>
+            </artocle>
+            <areacle>
+                <h3>Tugas 2</h3>
+                <p>Daftar tugas yang dijadwalkan untuk hari-hari mendatang.</p>
+            </areacle>
+            <article>
+                <h3>Tugas 3</h3>
+                <p>Daftar tugas yang telah diselesaikan.</p>    
+            </article>
+        </section>
+
+        <section id="daftar-tugas">
+            <h2>Daftar Tugas</h2>
+            [<table border="1">
+                <thead>
+                    <tr>
+                        <th scope="col">Nama </th>
+                        <th scope="col">Nama Tugas</th>
+                        <th scope="col">Status</th>
+                        <th scope="col">Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Nomor 1</td>
+                        <td>Membuat halaman HTML</td>
+                        <td>Tinggi</td>
+                        <td>Belum Selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                    <tr>
+                        <td>Nomor 2</td>
+                        <td>Sedang </td>
+                        <td>Sedang berlangsung</td>
+                        <td>Belum Selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                </tbody>
+                     <tr>
+                        <td>Nomor 3</td>
+                        <td>Rendah</td>
+                        <td>Sedang Berlangsung</td>
+                        <td>Belum Selesai</td>
+                        <td><button>Edit</button> <button>Hapus</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="tambah-tugas">
+            <h2>Tambah Tugas</h2>
+        <form>
+            <p>
+            <label for="nama-tugas">Nama Tugas:</label>
+            <input type="text" id="nama-tugas" name="nama-tugas" required>
+            </p>
+
+            <p>
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+            </p>
+
+            <p> 
+            <option value="belum-selesai">Belum Selesai</option>
+            <option value="sedang-berlangsung">Sedang Berlangsung</option>
+            <option value="selesai">Selesai</option>
+            </p>
+            </select>
+            <button type="submit">Tambah Tugas</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 BNSP</p>
+    </footer>
+
+</body>
+</html>
